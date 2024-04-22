@@ -1,122 +1,139 @@
+/* Define o estilo para todo o corpo do documento HTML */
 body {
-    font-family: Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color:linear-gradient(to bottom, #f82626, #4f4485);
+    font-family: Helvetica, sans-serif; /* Define a fonte para o texto */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    background-color: linear-gradient(to bottom, #f82626, #4f4485); /* Define um gradiente como plano de fundo */
 }
-/* header {
-    background-color: #333333f3;
-    color: #fff;
-    padding: px 0;
-    text-align: center; 
-}*/
+
+/* Comentário: Estilos para a div container2 */
 .container2 {
-    position: relative;
-    width: 100%;
-    height: 95vh; /* Para ocupar toda a altura da tela */
-    overflow: hidden;
-    background: linear-gradient(to right, #081823e9, #0e292ee9); /* Altere as cores conforme desejado */
+    position: relative; /* Define a posição relativa */
+    width: 100%; /* Define a largura como 100% */
+    height: 95vh; /* Define a altura como 95% da altura da tela */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa as dimensões */
+    background: linear-gradient(to right, #081823e9, #0e292ee9); /* Define um gradiente como plano de fundo */
     color: #abb10d; /* Cor do texto dentro do contêiner */
 }
 
+/* Estilos para o vídeo dentro de container2 */
 video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    position: absolute; /* Define a posição absoluta */
+    top: 0; /* Alinha o topo com o topo do contêiner */
+    left: 0; /* Alinha a esquerda com a esquerda do contêiner */
+    min-width: 100%; /* Define a largura mínima como 100% */
+    min-height: 100%; /* Define a altura mínima como 100% */
+    width: auto; /* Define a largura automática */
+    height: auto; /* Define a altura automática */
     z-index: -1; /* Coloca o vídeo atrás do conteúdo */
 }
 
+/* Estilos para o conteúdo dentro de container2 */
 .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    position: absolute; /* Define a posição absoluta */
+    top: 50%; /* Alinha o topo com 50% da altura do contêiner pai */
+    left: 50%; /* Alinha a esquerda com 50% da largura do contêiner pai */
+    transform: translate(-50%, -50%); /* Move o conteúdo para o centro do contêiner */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilos para os títulos h1 */
+h1 {
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 30px; /* Define uma margem inferior de 30px */
+}
+
+/* Estilos para os parágrafos p */
+p {
+    line-height: 1.6; /* Define o espaçamento entre linhas como 1.6 */
+    margin-bottom: 20px; /* Define uma margem inferior de 20px */
+
+}
+
+/* Estilos para a div tips */
+.tips {
+    display: flex; /* Define a exibição como flexível */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+    justify-content: center; /* Alinha os elementos ao centro horizontalmente */
+}
+
+/* Estilos para a div tip */
+.tip {
+    background-color: #fff; /* Define a cor de fundo como branco */
+    border: 1px solid #ddd; /* Define uma borda de 1px sólida */
+    border-radius: 5px; /* Define um raio de borda de 5px */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+    margin: 10px; /* Define margens de 10px em todos os lados */
+    padding: 20px; /* Define preenchimento de 20px em todos os lados */
+    width: calc(33.33% - 20px); /* Calcula a largura com base na largura total e nas margens */
+    box-sizing: border-box; /* Garante que a largura inclua as bordas e o preenchimento */
+}
+
+/* Estilos para os títulos h2 dentro de .tip */
+.tip h2 {
+    margin-top: 0; /* Remove a margem superior dos títulos h2 */
+}
+
+/* Estilos específicos para os títulos h1 dentro de container2 */
+.container2 h1:nth-of-type(1) {
+    color: #abb10d; /* Altere para a cor desejada */
+    top: px; /* Define a posição superior em pixels */
+    left: 08px; /* Define a posição à esquerda em pixels */
+    font-size: 60px; /* Define o tamanho da fonte como 50px */
+}
+
+/* Estilos específicos para os títulos h1 dentro de container2 */
+.container2 h1:nth-of-type(2) {
+    color: #abb10d; /* Altere para a cor desejada */
+    top: 50px; /* Define a posição superior em pixels */
+    left: 20px; /* Define a posição à esquerda em pixels */
+    font-size: 30px; /* Define o tamanho da fonte como 30px */
+}
+
+/* Estilos para o efeito de máquina de escrever (typewriter effect) */
+.typewriter {
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa as dimensões */
+    border-right: .15em solid orange; /* Adiciona um cursor de máquina de escrever */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    margin: 1 auto; /* Centraliza o elemento horizontalmente */
+    letter-spacing: .0em; /* Define o espaçamento entre letras */
+    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite; /* Define a animação de digitação */
+}
+
+/* Animação de digitação */
+@keyframes typing {
+    from { width: 0 } /* Começa com largura zero */
+    to { width: 100% } /* Termina com largura total */
+}
+
+/* Animação do cursor */
+@keyframes blink-caret {
+    from, to { border-color: transparent } /* Inicia e termina com borda transparente */
+    50% { border-color: orange; } /* No meio da animação, a borda fica laranja */
+}
+
+.paragrafo-estilizado {
+    font-family: Helvetica, sans-serif; /* Define a fonte do parágrafo */
+    font-size: 16px; /* Define o tamanho da fonte */
+    font-weight: lighter; /* Define a espessura da fonte (negrito) */
+    color: #f7f7f6; /* Define a cor do texto */
 }
 
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-.tips {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.tip {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    width: 100%;
+    margin-top: 20px;
     padding: 20px;
-    width: calc(33.33% - 20px);
-    box-sizing: border-box;
-}
-.tip h2 {
-    margin-top: 0;
+    background-color: #f0f0f0;
+    border-radius: 5px;
 }
 
-.container2 h1:nth-of-type(1) {
-    color: #abb10d; /* Altere para a cor desejada */
-    top: px;
-    left: 08px;
-    font-size: 50px;
-
-
+.read-more-content {
+    display: none;
 }
 
-.container2 h1:nth-of-type(2) {
-    color: #abb10d; /* Altere para a cor desejada */
-    top: 50px;
-    left: 20px;
-    font-size: 30px;
+.read-more-btn {
+    display: block;
+    margin-top: 10px;
+    text-decoration: underline;
+    cursor: pointer;
 }
-
-.typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-    
-
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    right: -50%;
-    transform: translate(-50%, -50%);
-    
-  }
-
- 
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
-
-
- 
