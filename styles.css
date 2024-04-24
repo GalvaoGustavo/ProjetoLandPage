@@ -12,8 +12,8 @@ body {
     width: 100%; /* Define a largura como 100% */
     height: 95vh; /* Define a altura como 95% da altura da tela */
     overflow: hidden; /* Esconde o conteúdo que ultrapassa as dimensões */
-    background: linear-gradient(to right, #081823e9, #0e292ee9); /* Define um gradiente como plano de fundo */
-    color: #abb10d; /* Cor do texto dentro do contêiner */
+    background: linear-gradient(to right, #081823d4, #0e292ed3); /* Define um gradiente como plano de fundo */
+    color: #abb10d  ; /* Cor do texto dentro do contêiner */
 }
 
 /* Estilos para o vídeo dentro de container2 */
@@ -76,7 +76,7 @@ p {
 
 /* Estilos específicos para os títulos h1 dentro de container2 */
 .container2 h1:nth-of-type(1) {
-    color: #abb10d; /* Altere para a cor desejada */
+    color: #ffffff; /* Altere para a cor desejada */
     top: px; /* Define a posição superior em pixels */
     left: 08px; /* Define a posição à esquerda em pixels */
     font-size: 60px; /* Define o tamanho da fonte como 50px */
@@ -84,7 +84,7 @@ p {
 
 /* Estilos específicos para os títulos h1 dentro de container2 */
 .container2 h1:nth-of-type(2) {
-    color: #abb10d; /* Altere para a cor desejada */
+    color: #ffffff; /* Altere para a cor desejada */
     top: 50px; /* Define a posição superior em pixels */
     left: 20px; /* Define a posição à esquerda em pixels */
     font-size: 30px; /* Define o tamanho da fonte como 30px */
@@ -93,7 +93,7 @@ p {
 /* Estilos para o efeito de máquina de escrever (typewriter effect) */
 .typewriter {
     overflow: hidden; /* Esconde o conteúdo que ultrapassa as dimensões */
-    border-right: .15em solid orange; /* Adiciona um cursor de máquina de escrever */
+    border-right: .15em solid rgb(4, 255, 0); /* Adiciona um cursor de máquina de escrever */
     white-space: nowrap; /* Impede que o texto quebre em várias linhas */
     margin: 1 auto; /* Centraliza o elemento horizontalmente */
     letter-spacing: .0em; /* Define o espaçamento entre letras */
@@ -133,7 +133,35 @@ p {
 
 .read-more-btn {
     display: block;
-    margin-top: 10px;
+    margin-top: 100p;
     text-decoration: underline;
     cursor: pointer;
 }
+
+.conteudo {
+    display: flex;
+}
+
+.imagemlogo {
+    width: 20%; /* A imagem ocupará 100% da largura do seu contêiner */
+    height: auto; /* A altura será ajustada automaticamente para manter as proporções originais */
+    margin-left: 590px;
+    margin-top: 15px;
+}   
+
+.imagemproteja {
+    width: 50%;
+    margin-left: 190px;
+    margin-top: 15px;
+    /* Para centralizar a imagem horizontalmente */
+  }
+  
+  img {
+    animation: piscar 1s infinite; /* Nome da animação, duração e repetição */
+  }
+  
+  @keyframes piscar {
+    0% { opacity: 1; } /* Totalmente visível */
+    50% { opacity: 0; } /* Totalmente invisível */
+    100% { opacity: 2; } /* Novamente totalmente visível */
+  }
