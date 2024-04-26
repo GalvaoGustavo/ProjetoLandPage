@@ -3,7 +3,7 @@ body {
     font-family: Helvetica, sans-serif; /* Define a fonte para o texto */
     margin: 0; /* Remove as margens padrão */
     padding: 0; /* Remove o preenchimento padrão */
-    background-color: linear-gradient(to bottom, #f82626, #4f4485); /* Define um gradiente como plano de fundo */
+    background: linear-gradient(to right, #071823, #102c31);
 }
 
 /* Comentário: Estilos para a div container2 */
@@ -47,6 +47,7 @@ h1 {
 p {
     line-height: 1.6; /* Define o espaçamento entre linhas como 1.6 */
     margin-bottom: 20px; /* Define uma margem inferior de 20px */
+    color: #ddd;
 
 }
 
@@ -119,13 +120,6 @@ p {
     color: #f7f7f6; /* Define a cor do texto */
 }
 
-.container {
-    width: 100%;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-}
 
 .read-more-content {
     display: none;
@@ -149,19 +143,12 @@ p {
     margin-top: 15px;
 }   
 
-.imagemproteja {
+.imagemdicas {
     width: 50%;
-    margin-left: 190px;
-    margin-top: 15px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 40px;
     /* Para centralizar a imagem horizontalmente */
   }
   
-  img {
-    animation: piscar 1s infinite; /* Nome da animação, duração e repetição */
-  }
   
-  @keyframes piscar {
-    0% { opacity: 1; } /* Totalmente visível */
-    50% { opacity: 0; } /* Totalmente invisível */
-    100% { opacity: 2; } /* Novamente totalmente visível */
-  }
