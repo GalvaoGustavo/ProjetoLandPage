@@ -99,6 +99,7 @@ p {
     margin: 1 auto; /* Centraliza o elemento horizontalmente */
     letter-spacing: .0em; /* Define o espaçamento entre letras */
     animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite; /* Define a animação de digitação */
+    margin-top: 20px;
 }
 
 /* Animação de digitação */
@@ -137,10 +138,11 @@ p {
 }
 
 .imagemlogo {
-    width: 20%; /* A imagem ocupará 100% da largura do seu contêiner */
+    width: 15%; /* A imagem ocupará 100% da largura do seu contêiner */
     height: auto; /* A altura será ajustada automaticamente para manter as proporções originais */
     margin-left: 590px;
     margin-top: 15px;
+    
 }   
 
 .imagemdicas {
@@ -150,5 +152,26 @@ p {
     margin-top: 40px;
     /* Para centralizar a imagem horizontalmente */
   }
+
+.imagemproteja {
+    width: 20%;
+    height: auto;
+    margin-left: 550px;
+    margin-top: 400px;
+    display: flex;
+    /* Para centralizar a imagem horizontalmente */
+  }
   
-  
+  @media screen and (max-width: 768px) {
+   video{
+    display: block;
+    background-image: none;
+   }
+   .imagemproteja{
+    display: block;
+    background-image: none;
+   }
+    
+
+
+}
