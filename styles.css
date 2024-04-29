@@ -17,8 +17,9 @@ h1 {
 /* Estilos para os parágrafos p */
 p {
     line-height: 1.6; /* Define o espaçamento entre linhas como 1.6 */
-    margin-bottom: 20px; /* Define uma margem inferior de 20px */
+    margin-bottom: 30px; /* Define uma margem inferior de 20px */
     color: #ddd;
+    margin: 20px;
 
 }
 
@@ -226,3 +227,26 @@ video {
     }
 }
 
+/* ---------------------------------------------------------------------------- */
+
+.conteudo-separado {
+    display: flex; /* Utiliza flexbox para layout */
+    align-items: flex-start; /* Alinha os itens verticalmente no topo */
+
+}
+
+.linha-vertical {
+    width: 2px; /* Largura da linha vertical */
+    height: 100px; /* Altura da linha vertical (ajuste conforme necessário) */
+    background-color: #a7c757; /* Cor da linha vertical */
+    margin: 0 30px; /* Margem horizontal entre os conteúdos */
+}
+
+.conteudo-lado-esquerdo,
+.conteudo-lado-direito {
+    flex: 1; /* Cresce para ocupar espaço disponível */
+}
+
+.conteudo-lado-direito {
+    text-align: left; /* Alinha o conteúdo do lado direito à direita */
+}
