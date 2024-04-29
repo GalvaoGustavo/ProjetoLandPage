@@ -19,7 +19,9 @@ p {
     line-height: 1.6; /* Define o espaçamento entre linhas como 1.6 */
     margin-bottom: 30px; /* Define uma margem inferior de 20px */
     color: #ddd;
-    margin: 20px;
+    margin: 50px;
+    text-align: justify; /* Justifica o texto dentro dos elementos <p> */
+
 
 }
 
@@ -130,13 +132,13 @@ video {
 
 /* Estilos para o efeito de máquina de escrever (typewriter effect) */
 /* .typewriter { */
-    overflow: hidden; /* Esconde o conteúdo que ultrapassa as dimensões */
-    border-right: .15em solid rgb(4, 255, 0); /* Adiciona um cursor de máquina de escrever */
-    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
-    margin: 1 auto; /* Centraliza o elemento horizontalmente */
-    letter-spacing: .0em; /* Define o espaçamento entre letras */
-    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite; /* Define a animação de digitação */
-    margin-top: 20px;
+    /* overflow hidden; Esconde o conteúdo que ultrapassa as dimensões */
+    /* border-right: .15em solid rgb(4, 255, 0); Adiciona um cursor de máquina de escrever */
+    /* white-space: nowrap; Impede que o texto quebre em várias linhas */
+    /* margin: 1 auto; Centraliza o elemento horizontalmente */
+    /* letter-spacing: .0em; Define o espaçamento entre letras */
+    /* animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite; Define a animação de digitação */
+    /* margin-top: 20px; */
     
 
 
@@ -227,26 +229,3 @@ video {
     }
 }
 
-/* ---------------------------------------------------------------------------- */
-
-.conteudo-separado {
-    display: flex; /* Utiliza flexbox para layout */
-    align-items: flex-start; /* Alinha os itens verticalmente no topo */
-
-}
-
-.linha-vertical {
-    width: 2px; /* Largura da linha vertical */
-    height: 100px; /* Altura da linha vertical (ajuste conforme necessário) */
-    background-color: #a7c757; /* Cor da linha vertical */
-    margin: 0 30px; /* Margem horizontal entre os conteúdos */
-}
-
-.conteudo-lado-esquerdo,
-.conteudo-lado-direito {
-    flex: 1; /* Cresce para ocupar espaço disponível */
-}
-
-.conteudo-lado-direito {
-    text-align: left; /* Alinha o conteúdo do lado direito à direita */
-}
