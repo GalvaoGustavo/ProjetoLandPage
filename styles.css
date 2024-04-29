@@ -229,3 +229,33 @@ video {
     }
 }
 
+/*FOOTER*/
+
+*{
+    padding: 5px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header{
+    background-color: rgb(200,200,200);
+    height: 40px;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgb(240,240,240);
+}
+
+h3{
+    font-family: Helvetica, sans-serif;;
+    margin-top: 5px;
+    border-bottom: 10px solid gold;
+    display: inline-block;
+    text-transform: uppercase;
+    color: rgb(80,80,80)
+}
+
