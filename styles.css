@@ -32,12 +32,13 @@ p {
 .container2 {
     position: relative;
     width: 100%;
-    max-width: 1600px; /* Define a largura máxima do contêiner */
+    /* max-width: 1700px; Define a largura máxima do contêiner */
     margin: 0 auto; /* Centraliza o contêiner horizontalmente */
     height: calc(25vw + 50vh); /* Calcula a altura com base na largura e altura da tela */
     overflow: hidden;
+    object-fit: cover;
     background: linear-gradient(to right, #081823d4, #0e292ed3);
-    color: #acb10d00;/
+    color: #acb10d00;
 }
 
 
@@ -64,7 +65,9 @@ video {
     min-height: 100%; /* Define a altura mínima como 100% */
     width: auto; /* Define a largura automática */
     height: auto; /* Define a altura automática */
+    object-fit: cover;
     z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+
 }
 
 /* conteúdo dentro de container2 */
@@ -90,7 +93,9 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1550px; /* Define a largura máxima do contêiner */
+    object-fit: cover;
+
+    /* max-width: 1550px; Define a largura máxima do contêiner */
       
   }
   .container p {
