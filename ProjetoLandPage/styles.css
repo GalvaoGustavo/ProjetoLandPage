@@ -1,0 +1,261 @@
+
+body {
+    font-family: Helvetica, sans-serif; /* Define a fonte para o texto */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    background: linear-gradient(to right, #071823, #102c31);
+}
+
+/* Estilos para os títulos h1 */
+h1 {
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 30px; /* Define uma margem inferior de 30px */
+    color: #ddd;
+    
+}
+
+/* Estilos para os parágrafos p */
+p {
+    line-height: 1.6; /* Define o espaçamento entre linhas como 1.6 */
+    margin-bottom: 30px; /* Define uma margem inferior de 20px */
+    color: #ddd;
+    margin: 50px;
+    text-align: justify; /* Justifica o texto dentro dos elementos <p> */
+
+
+}
+
+
+/* --------------- container pagina inicial  ------------------- */
+
+
+.container2 {
+    position: relative;
+    width: 100%;
+    max-width: 1600px; /* Define a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    height: calc(25vw + 50vh); /* Calcula a altura com base na largura e altura da tela */
+    overflow: hidden;
+    background: linear-gradient(to right, #081823d4, #0e292ed3);
+    color: #acb10d00;/
+}
+
+
+.container2 h1 {
+    color: #b1ed09; /* Cor do texto  */
+    position: absolute; 
+    transform: translate(-50%, -50%); 
+    font-size: 3vw; 
+    text-align: center;  
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden;
+    white-space: nowrap; 
+    
+}
+
+/* --------------- container pagina inicial  ------------------- */
+
+video {
+    position: absolute; /* Define a posição absoluta */
+    top: 0; /* Alinha o topo com o topo do contêiner */
+    left: 0; /* Alinha a esquerda com a esquerda do contêiner */
+    min-width: 100%; /* Define a largura mínima como 100% */
+    min-height: 100%; /* Define a altura mínima como 100% */
+    width: auto; /* Define a largura automática */
+    height: auto; /* Define a altura automática */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+}
+
+/* conteúdo dentro de container2 */
+.content {
+    position: absolute; /* Define a posição absoluta */
+    top: 89%; /* Alinha o topo com 50% da altura do contêiner pai */
+    left: 50%; /* Alinha a esquerda com 50% da largura do contêiner pai */
+    transform: translate(-50%, -50%); /* Move o conteúdo para o centro do contêiner */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* ------------------------------- typescript titulo container ---------------------------------------- */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1550px; /* Define a largura máxima do contêiner */
+      
+  }
+  .container p {
+    position: absolute;
+    top: 40%;
+    font-size: 5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  
+  }
+  .container p span.typed-text {
+    font-weight: bold;
+    color: #abb10d;
+  
+  }
+  .container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
+/* --------------- typewriter teste1  ---------------------------- */
+
+
+/* Estilos para o efeito de máquina de escrever (typewriter effect) */
+/* .typewriter { */
+    /* overflow hidden; Esconde o conteúdo que ultrapassa as dimensões */
+    /* border-right: .15em solid rgb(4, 255, 0); Adiciona um cursor de máquina de escrever */
+    /* white-space: nowrap; Impede que o texto quebre em várias linhas */
+    /* margin: 1 auto; Centraliza o elemento horizontalmente */
+    /* letter-spacing: .0em; Define o espaçamento entre letras */
+    /* animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite; Define a animação de digitação */
+    /* margin-top: 20px; */
+    
+
+
+/* @keyframes typing {
+    from { width: 0 } /* Começa com largura zero */
+    /* to { width: 100% } /* Termina com largura total  */
+/* }  */
+
+
+/* @keyframes blink-caret { */
+    /* from, to { border-color: transparent } Inicia e termina com borda transparente */
+    /* 50% { border-color: orange; } No meio da animação, a borda fica laranja */
+/* } */
+
+
+/* ----------------- botao leia mais ----------------- */
+
+.read-more-content {
+    display: none;
+}
+
+.read-more-btn {
+    display: block;
+    margin-top: 100p;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* --------------- imagens  ------------------------- */
+
+.imagemlogo {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 20%; /* Ajuste conforme necessário */
+    max-height: 80vh; /* Ajuste conforme necessário */
+
+    
+}   
+
+.imagemdicas {
+    width: 50%;
+    height: auto;
+    margin-left: 10px;
+    
+}
+
+.imagemproteja {
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 20%;  
+    max-height: 80vh; 
+} 
+  
+/* --------------- setas ------------------------- */
+
+  .scroll-down-arrows {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll-down-arrow {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid #ffffff5e;
+    cursor: pointer;
+    margin-bottom: 10px; /* Espaço entre as setas */
+    position: relative;
+    animation: scrollAnimation 500ms ease-in-out infinite alternate; /* Animação constante */
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0); /* Começa na posição normal */
+    }
+    100% {
+        transform: translateY(5px); /* Desce ligeiramente */
+    }
+}
+
+/*FOOTER*/
+
+*{
+    padding: 5px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header{
+    background-color: rgb(200,200,200);
+    height: 40px;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgb(240,240,240);
+}
+
+h3{
+    font-family: Helvetica, sans-serif;;
+    margin-top: 5px;
+    border-bottom: 10px solid gold;
+    display: inline-block;
+    text-transform: uppercase;
+    color: rgb(80,80,80)
+}
+
